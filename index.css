@@ -1,0 +1,116 @@
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.top{
+    display:flex;  
+    background-color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    flex-wrap: wrap;
+}
+.logo img{
+    height: 50px;
+}
+
+.contact{
+    width: 100%;
+}
+.contact-top{
+    display:flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+.mail, .tel{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-right: 70px;
+}
+
+.mail .bi, .tel .bi{
+  font-size: 22px;
+  color: red;
+}
+
+.mail .bi{
+    rotate:-35deg;
+}
+
+/*********************NAVBAR***************************/
+
+.navbar{
+    background-color: #00353F;
+}
+
+.navbar a{
+    color: white;
+}
+.navbar-nav :last-child{
+    color: red;
+}
+
+.navbar-nav {
+    gap: 40px;
+    font-size: 12px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.search{
+    margin-right: 40px;
+    display: flex;
+    align-items: center; 
+}
+
+.search .d-flex{
+    height: 30px;
+    position: relative;
+    display: inline-flex;
+    justify-content: end;
+}
+.search .form-control{
+    width: 350px;
+}
+
+.btn {
+    position: absolute;
+    height: 30px; 
+}
+
+.line{
+    background-color: red;
+    height: 4px;
+}
+
+/**************************MAIN**********************/
+
+main{
+    position: absolute;
+    margin-top: 145px;
+    width: 100%;
+    height: 100%;
+}
+
+/***************Baniere********************/
+
+
+
+.baniere img{
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 15%;
+}
