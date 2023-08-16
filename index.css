@@ -292,8 +292,7 @@ article {
     height: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .connexion a{
@@ -301,6 +300,56 @@ article {
     text-decoration: none;
 }
 
-.connexion .btn:hover{
-    
+/*************AVIS**************/
+
+.container-avis{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+.container-avis form{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.container-avis form ul{
+    list-style-type: none;
+}
+.container-avis textarea {
+    width: 400px;
+    height: 100px;
+    margin-left: 5px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-messages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 5px;
+    height: 400px;  
+    justify-items: center;
+    overflow: auto;
+    margin-top: 15px;
+ 
+}
+
+.message {
+    width: 300px;
+    border: 1px solid #000000;
+    padding: 10px;
+    max-height: 150px;
+    height: 150px;
+}
+
+
+
