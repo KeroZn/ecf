@@ -128,7 +128,7 @@ main{
 
 /**********************PRESTATION***************************/
 
-.container-prestation .title{
+article {
     margin: 50px 0 0 100px;
 }
 
@@ -176,4 +176,33 @@ main{
 .carousel {
 
     height: 400px;
+}
+
+/*************************AVIS*****************/
+
+.title-avis button {
+    border: none;
+    background-color: white;
+}
+
+.avis{
+    display: flex;
+    justify-content: center;  
+}
+
+/***********************Footer***************************/
+
+.container-footer{
+    margin-top: 100px;
+    bottom: 0;
+    background-color: #00353F;
+}
+.footer{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    gap: 250px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
 }
