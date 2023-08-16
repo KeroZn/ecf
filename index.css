@@ -1,4 +1,7 @@
 
+
+/****************HEADER**********************/
+
 header{
     position: fixed;
     width: 100%;
@@ -196,6 +199,7 @@ article {
     margin-top: 100px;
     bottom: 0;
     background-color: #00353F;
+    position: relative;
 }
 .footer{
     display: flex;
@@ -205,4 +209,94 @@ article {
     font-size: 10px;
     text-align: center;
     color: white;
+}
+
+/**************************ACHAT VOITURE****************************/
+
+
+.title-voiture {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container-filter{
+    display: flex;    
+    height: 80px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.filter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 100%;
+}
+
+.recherche input{
+    width: 90px;
+}
+
+/*************************LOGIN************************/
+
+/**************BACK************/
+
+.back a{
+    color: black;
+    text-decoration: none;
+}
+
+.back{  
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.logo-login{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+}
+
+.logo-login img{
+    height: 200px;
+    width: 400px;
+}
+
+.connexion{
+    display: flex;  
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mdp{
+    margin-top: 10px;
+}
+
+.identifiant{
+    display: flex;
+    gap: 27px;
+}
+
+.connexion .btn{
+    background-color: #00353F;
+    position: relative;
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.connexion a{
+    color: white;
+    text-decoration: none;
 }
