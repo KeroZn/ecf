@@ -1,34 +1,28 @@
-//------------------------------AVIS------------------------------
+//-------------------------------------prestation vers contact-------------------------
 
-function afficherAvis() {
-    const nom = document.getElementById('nom').value;
-    const avis = document.getElementById('avis').value;
+    // Fonction pour extraire le paramètre d'URL
+    function getParameterByName(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
 
-    const messageElement = document.createElement('div');
-    messageElement.classList.add('message');
-    messageElement.textContent = `${nom}: ${avis}`;
+    // Fonction pour mettre à jour le champ du sujet du formulaire de contact
+    function updateSubject() {
+        const subject = getParameterByName("sujet");
+        if (subject) {
+            document.getElementById("sujet").value = subject;
+        }
+    }
 
-    const container = document.querySelector('.container-messages');
-    
-    // Insérer le message en tant que premier enfant (au début de la liste)
-    container.insertBefore(messageElement, container.firstChild);
-
-    // Réinitialisation des champs d'entrée
-    document.getElementById('nom').value = '';
-    document.getElementById('avis').value = '';
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    const publierBtn = document.getElementById('publier-btn');
-    publierBtn.addEventListener('click', afficherAvis);
-});
+    // Appeler la fonction pour mettre à jour le champ du sujet
+    window.onload = updateSubject;
 
 
 //------------------------------VOITURE------------------------------------ 
 
 
 
-    // Supposons que vous ayez un tableau d'objets représentant des voitures
+    //  tableau d'objets représentant des voitures
     var cars = [
         { marque: "Citroen", modele: "C3", annee: 2017, kilometrage: 50000, prix: 10000, photo :"vehicule/citroen.jpg"},
         { marque: "Peugeot", modele: "208", annee: 2019, kilometrage: 100000, prix: 6000,photo :"vehicule/peugeot.jpg" },
@@ -94,8 +88,16 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }
-    
-    
     // Appel initial pour afficher toutes les voitures
     displayCars();
+
+
+
+
+
+
+
+
+
+
 
